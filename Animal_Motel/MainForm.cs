@@ -214,9 +214,11 @@ namespace Animal_Motel
                     chbSpec1.Text = "Is Pet";
                     chbSpec2.Visible = true;
                     chbSpec1.Visible = true;
-                    chbSpec2.Text = "Jersey Cow";
-                    lblSpec1.Text = "Milk/Day";
-                    DiasableTextSpecs2();
+                    lblSpec2.Text = "Milk / Day";
+                     lblSpec2.Visible = true;
+                    txtSpec2.Visible = true;
+                    chbSpec2.Text = "Under Quarantine";
+                    lblSpec1.Text = "Quarantine Days";
                     showText = true;
                     break;
                 case AllAnimals.Dog:         //Update special info according to Dogs
@@ -337,8 +339,9 @@ namespace Animal_Motel
                             break;
                         case AllAnimals.Cow:
                             ((Cow)animal).IsPet = chbSpec1.Checked;
-                            ((Cow)animal).IsJerseyCow = chbSpec2.Checked;
-                            ((Cow)animal).AmountOfMilkPerDay = spec1Value;
+                            ((Cow)animal).UnderQuarantine = chbSpec2.Checked;
+                            ((Cow)animal).DaysQuarantine = spec1Value;
+                            ((Cow)animal).AmountOfMilkPerDay = spec2Value;
                             break;
                         case AllAnimals.Dog:
                             ((Dog)animal).IsPet = chbSpec1.Checked;

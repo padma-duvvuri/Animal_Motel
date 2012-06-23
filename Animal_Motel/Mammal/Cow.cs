@@ -17,7 +17,6 @@ namespace Animal_Motel
     {
         //fields specific to Cows
         private int m_amountOfMilkPerDay;
-        private bool m_isJerseyCow; //as lot of different cows types available consideres only one type
 
         /// <summary>
         /// Default Constructor
@@ -36,15 +35,6 @@ namespace Animal_Motel
             set { this.m_amountOfMilkPerDay = value; }
         }
 
-        /// <summary>
-        /// Gets or sets the whether the Bees is Honeybee or
-        /// not
-        /// </summary>
-        public bool IsJerseyCow
-        {
-            get { return m_isJerseyCow; }
-            set { m_isJerseyCow = value; }
-        }
 
         #region "Implementation of Abstract Methods"
 
@@ -69,10 +59,8 @@ namespace Animal_Motel
             string strout = (string.IsNullOrEmpty(strInfo) ? string.Empty : strInfo);
             strout += (IsPet ? "This is a Pet" : "This is not a Pet.");
             strout += Environment.NewLine;
-            if (IsJerseyCow)
-            {
-                strout += string.Format("Produces {0} liters of milk per day", m_amountOfMilkPerDay);
-            }
+            strout += string.Format("Produces {0} liters of milk per day", m_amountOfMilkPerDay);
+         
             strout += Environment.NewLine + PetOrBusinessData();
             
             return strout;

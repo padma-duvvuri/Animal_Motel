@@ -17,6 +17,9 @@ namespace Animal_Motel
     {
         //Tfield specific to mammals
         private bool m_isPet; // whehter this mammal is pet or not
+        private bool m_underQuarantine; //whether the mammel is under quarantine or not
+        private int m_daysQuarantine;
+
 
         /// <summary>
         /// Default constructor
@@ -33,7 +36,23 @@ namespace Animal_Motel
             get { return this.m_isPet; }
             set { this.m_isPet = value; }
         }
+        /// <summary>
+        ///Gets or Sets the number of days in quarantine
+        /// </summary>
+        public int DaysQuarantine
+        {
+            get { return m_daysQuarantine; }
+            set { m_daysQuarantine = value; }
+        }
 
+        /// <summary>
+        /// Gets or sets wether the dog is under quarantine or not
+        /// </summary>
+        public bool UnderQuarantine
+        {
+            get { return m_underQuarantine; }
+            set { m_underQuarantine = value; }
+        }
         /// <summary>
         /// Lot of mammals kept as pets and some as group for business purpose
         /// For mil etc.

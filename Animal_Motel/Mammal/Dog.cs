@@ -14,8 +14,6 @@ namespace Animal_Motel
 
         //fields specific to Dogs
         private int m_numberOfTeeth;
-        private bool m_underQuarantine; //whether the dog is under quarantine or not
-        private int m_daysQuarantine;
 
          /// <summary>
         /// Default Constructor
@@ -33,23 +31,7 @@ namespace Animal_Motel
             set { m_numberOfTeeth = value; }
         }
 
-        /// <summary>
-        ///Gets or Sets the number of days in quarantine
-        /// </summary>
-        public int DaysQuarantine
-        {
-            get { return m_daysQuarantine; }
-            set { m_daysQuarantine = value; }
-        }
 
-        /// <summary>
-        /// Gets or sets wether the dog is under quarantine or not
-        /// </summary>
-        public bool UnderQuarantine
-        {
-            get { return m_underQuarantine; }
-            set { m_underQuarantine = value; }
-        }
 
         #region "Implementation of Abstract Methods"
 
