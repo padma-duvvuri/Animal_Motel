@@ -1,4 +1,8 @@
-﻿using System;
+﻿//File: Ostrich.cs
+//Name: Padma Priya Duvvuri
+//Date: 20/06/2012
+
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -12,7 +16,7 @@ namespace Animal_Motel
     {
         //fields specific to Ostrich
         private bool m_layEggs; //whether this animal can lay eggs
-        private int m_numberOfEggs;
+        private int m_numberOfEggs; //number of eggs
 
          /// <summary>
         /// Default Constructor
@@ -22,7 +26,7 @@ namespace Animal_Motel
         }
 
         /// <summary>
-        ///Gets or Sets the number of teeth that dog has
+        ///Gets or Sets the m_numberOfEggs field
         /// </summary>
         public int NumberOfEggs
         {
@@ -31,7 +35,7 @@ namespace Animal_Motel
         }
 
         /// <summary>
-        /// Gets or sets wether the dog is under quarantine or not
+        /// Gets or sets m_layEggs field
         /// </summary>
         public bool LayEggs
         {
@@ -42,9 +46,9 @@ namespace Animal_Motel
         #region "Implementation of Abstract Methods"
 
         /// <summary>
-        /// Implementation of Abstract class from Mammals.cs
+        /// Implementation of Abstract class from Birds.cs
         /// </summary>
-        /// <returns>Retuns infomation about stinking nature of the Dog</returns>
+        /// <returns>Retuns infomation about Ostrich.cs</returns>
         public override string PetOrPoultryBusinessData()
         {
             string strOut = "It is used for Poultry business. ";
@@ -59,7 +63,7 @@ namespace Animal_Motel
         /// <summary>
         /// Implementation of Abstract class from Animal.cs
         /// </summary>
-        /// <returns>A string with information regarding Mammal Cow</returns>
+        /// <returns>A string with information regarding Bird Ostrich</returns>
         public override string GetAnimalSpecificData()
         {
             string strInfo = ExtraAnimalInfo;  //Call to porperty in base class (Animal.cs)

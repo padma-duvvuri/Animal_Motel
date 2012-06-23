@@ -1,4 +1,8 @@
-﻿using System;
+﻿//File: BirdFactory.cs
+//Name: Padma Priya Duvvuri
+//Date: 20/06/2012
+
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -34,7 +38,7 @@ namespace Animal_Motel
             //set the category
             animalObj.Category = CategoryType.Bird;
 
-            return animalObj; //return the crated animal Object
+            return animalObj; //return the created animal Object
         }
     }
 }

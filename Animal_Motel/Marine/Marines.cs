@@ -1,4 +1,8 @@
-﻿using System;
+﻿//File: Marines.cs
+//Name: Padma Priya Duvvuri
+//Date: 20/06/2012
+
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -11,7 +15,7 @@ namespace Animal_Motel
     /// </summary>
     public abstract class Marines : Animal
     {
-        //insect poisonous or not
+        //fileds specific to Marines
         private bool m_isScary;
 
         /// <summary>
@@ -22,7 +26,7 @@ namespace Animal_Motel
         }
 
         /// <summary>
-        /// property for m_ispoisonous field
+        /// property for m_isScary field
         /// </summary>
         public bool IsScary
         {
@@ -31,8 +35,7 @@ namespace Animal_Motel
         }
 
         /// <summary>
-        /// For all insects objects, info on their invasiveness and stinkynss
-        /// should be provided
+        /// For all Marines objects, info on whethere they are dangerous and wild
         /// </summary>
         /// <returns></returns>
         public abstract string DangerousAndWildData();

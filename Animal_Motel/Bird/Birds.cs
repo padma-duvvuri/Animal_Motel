@@ -1,4 +1,8 @@
-﻿using System;
+﻿//File: Bird.cs
+//Name: Padma Priya Duvvuri
+//Date: 20/06/2012
+
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -11,7 +15,7 @@ namespace Animal_Motel
     /// </summary>
     public abstract class Birds : Animal
     {
-        //mammal gives milk for people
+        //feilds
         private bool m_canFly;
 
         /// <summary>
@@ -22,7 +26,7 @@ namespace Animal_Motel
         }
 
         /// <summary>
-        /// property for m_givesMilkForPeople field
+        /// property for m_canFly field
         /// </summary>
         public bool CanFly
         {

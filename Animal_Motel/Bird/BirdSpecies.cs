@@ -1,4 +1,8 @@
-﻿using System;
+﻿//File: BirdSpecies.cs
+//Name: Padma Priya Duvvuri
+//Date: 20/06/2012
+
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -12,6 +16,6 @@ namespace Animal_Motel
     {
         Ostrich,
         Parrot
-        // More to add
+        // Only 2 are added
     }
 }

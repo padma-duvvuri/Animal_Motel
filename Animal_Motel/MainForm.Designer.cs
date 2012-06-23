@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
             this.grbAnimalSpecs = new System.Windows.Forms.GroupBox();
             this.grbSpec = new System.Windows.Forms.GroupBox();
             this.chbSpec2 = new System.Windows.Forms.CheckBox();
@@ -53,14 +54,14 @@
             this.lblAge = new System.Windows.Forms.Label();
             this.lblName = new System.Windows.Forms.Label();
             this.grbData = new System.Windows.Forms.GroupBox();
+            this.label6 = new System.Windows.Forms.Label();
+            this.rtbSpecificData = new System.Windows.Forms.RichTextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.lsbData = new System.Windows.Forms.ListBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.rtbSpecificData = new System.Windows.Forms.RichTextBox();
-            this.label6 = new System.Windows.Forms.Label();
             this.grbAnimalSpecs.SuspendLayout();
             this.grbSpec.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pcImage)).BeginInit();
@@ -215,7 +216,7 @@
             // 
             // pcImage
             // 
-            this.pcImage.Image = global::Animal_Motel.Properties.Resources.addImageHere;
+            this.pcImage.Image = ((System.Drawing.Image)(resources.GetObject("pcImage.Image")));
             this.pcImage.Location = new System.Drawing.Point(548, 63);
             this.pcImage.Name = "pcImage";
             this.pcImage.Size = new System.Drawing.Size(136, 118);
@@ -326,6 +327,24 @@
             this.grbData.TabStop = false;
             this.grbData.Text = "List of registered animals with general data";
             // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(175, 16);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(45, 13);
+            this.label6.TabIndex = 23;
+            this.label6.Text = "Species";
+            // 
+            // rtbSpecificData
+            // 
+            this.rtbSpecificData.Location = new System.Drawing.Point(547, 32);
+            this.rtbSpecificData.Name = "rtbSpecificData";
+            this.rtbSpecificData.ReadOnly = true;
+            this.rtbSpecificData.Size = new System.Drawing.Size(321, 173);
+            this.rtbSpecificData.TabIndex = 22;
+            this.rtbSpecificData.Text = "";
+            // 
             // label5
             // 
             this.label5.AutoSize = true;
@@ -380,24 +399,6 @@
             this.label1.TabIndex = 15;
             this.label1.Text = "Specific Data";
             // 
-            // rtbSpecificData
-            // 
-            this.rtbSpecificData.Location = new System.Drawing.Point(547, 32);
-            this.rtbSpecificData.Name = "rtbSpecificData";
-            this.rtbSpecificData.ReadOnly = true;
-            this.rtbSpecificData.Size = new System.Drawing.Size(321, 173);
-            this.rtbSpecificData.TabIndex = 22;
-            this.rtbSpecificData.Text = "";
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(175, 16);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(45, 13);
-            this.label6.TabIndex = 23;
-            this.label6.Text = "Species";
-            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -407,6 +408,7 @@
             this.Controls.Add(this.grbAnimalSpecs);
             this.Name = "MainForm";
             this.Text = "Apu Animal Motel";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.MainForm_FormClosing);
             this.grbAnimalSpecs.ResumeLayout(false);
             this.grbAnimalSpecs.PerformLayout();
             this.grbSpec.ResumeLayout(false);

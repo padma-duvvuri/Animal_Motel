@@ -54,6 +54,7 @@
     <Compile Include="Bird\BirdSpecies.cs" />
     <Compile Include="Bird\Ostrich.cs" />
     <Compile Include="Bird\Parrot.cs" />
+    <Compile Include="InputUtility.cs" />
     <Compile Include="Insect\Bee.cs" />
     <Compile Include="Insect\ButterFly.cs" />
     <Compile Include="CategoryType.cs" />

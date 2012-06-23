@@ -1,4 +1,8 @@
-﻿using System;
+﻿//File: Dog.cs
+//Name: Padma Priya Duvvuri
+//Date: 19/06/2012
+
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -12,6 +16,6 @@ namespace Animal_Motel
     {
         Dog,
         Cow
-        // More to add
+        // Only 2 are added
     }
 }

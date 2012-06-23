@@ -1,4 +1,8 @@
-﻿using System;
+﻿//File: Parrot.cs
+//Name: Padma Priya Duvvuri
+//Date: 20/06/2012
+
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -34,7 +38,7 @@ namespace Animal_Motel
         /// <summary>
         /// Implementation of Abstract class from Birds.cs
         /// </summary>
-        /// <returns>Retuns infomation about stinking nature of the Dog</returns>
+        /// <returns>Retuns infomation about Parrot</returns>
         public override string PetOrPoultryBusinessData()
         {
             string strOut = "It is kept as pet";
@@ -46,7 +50,7 @@ namespace Animal_Motel
         /// <summary>
         /// Implementation of Abstract class from Animal.cs
         /// </summary>
-        /// <returns>A string with information regarding Mammal Cow</returns>
+        /// <returns>A string with information regarding Bird Parrot</returns>
         public override string GetAnimalSpecificData()
         {
             string strInfo = ExtraAnimalInfo;  //Call to porperty in base class (Animal.cs)

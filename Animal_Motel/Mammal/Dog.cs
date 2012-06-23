@@ -1,4 +1,8 @@
-﻿using System;
+﻿//File: Dog.cs
+//Name: Padma Priya Duvvuri
+//Date: 19/06/2012
+
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -65,7 +69,7 @@ namespace Animal_Motel
         /// <summary>
         /// Implementation of Abstract class from Animal.cs
         /// </summary>
-        /// <returns>A string with information regarding Mammal Cow</returns>
+        /// <returns>A string with information regarding Mammal Dog</returns>
         public override string GetAnimalSpecificData()
         {
             string strInfo = ExtraAnimalInfo;  //Call to porperty in base class (Animal.cs)

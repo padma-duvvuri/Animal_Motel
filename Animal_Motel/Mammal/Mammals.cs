@@ -1,4 +1,8 @@
-﻿using System;
+﻿//File: Mammals.cs
+//Name: Padma Priya Duvvuri
+//Date: 19/06/2012
+
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -11,8 +15,8 @@ namespace Animal_Motel
     /// </summary>
     public abstract class Mammals : Animal
     {
-        //mammal gives milk for people
-        private bool m_isPet;
+        //Tfield specific to mammals
+        private bool m_isPet; // whehter this mammal is pet or not
 
         /// <summary>
         /// Default constructor
@@ -22,7 +26,7 @@ namespace Animal_Motel
         }
 
         /// <summary>
-        /// property for m_givesMilkForPeople field
+        /// property for m_isPet field
         /// </summary>
         public bool IsPet
         {

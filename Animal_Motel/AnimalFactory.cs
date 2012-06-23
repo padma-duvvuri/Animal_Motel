@@ -1,4 +1,8 @@
-﻿using System;
+﻿//File: AnimalFactory.cs
+//Name: Padma Priya Duvvuri
+//Date: 23/06/2012
+
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -16,29 +20,27 @@ namespace Animal_Motel
           //constructor
         public AnimalFactory()
         {
-            //In this list objects of diff FoodItems saved
+            //In this list objects of diff animal objects saved
             m_animalList = new List<Animal>();
             m_idCounter = 1000;
 
-            //Put som test objects into the registry
-            //TestObjects();
         }
 
         /// <summary>
-        /// It counts the number of customers objects that are 
-        /// present in the arraylist.
+        /// It counts the number of animal objects that are 
+        /// present in the m_animalList.
         /// </summary>
-        /// <returns>no.of customers present</returns>
+        /// <returns>no.of animals present</returns>
         public int Count
         {
             get { return m_animalList.Count; }
         }
 
         /// <summary>
-        /// It creates a new customer id for every customer 
-        /// present in the arraylist.
+        /// It creates a new animal id for every animal 
+        /// present in the animal List.
         /// </summary>
-        /// <returns>new id for the new customer</returns>
+        /// <returns>new id for the new animal</returns>
         public int GetNewID
         {
             get { return m_idCounter++; }
@@ -49,35 +51,20 @@ namespace Animal_Motel
         /// Add a new object to the list. The object will be appended to the 
         /// end of the list.
         /// </summary>
-        /// <param name="FoodItem">The object to be added.</param>
-        /// <returns>The number of items in the list - as an extra info.</returns>
+        /// <param name="animal">The object to be added.</param>
         /// <remarks></remarks>
         public void Add(Animal animal)
         {
             m_animalList.Add(animal);
-            //return m_animalList.Count;
         }
 
         /// <summary>
-        /// validates the index of the array list.
+        /// Takes category and species that the user selects in the mainform and returns the Animal oject 
+        /// that will be created
         /// </summary>
-        /// <param name="index">selected index</param>
-        /// <returns>true if index is less than the arraysize</returns>
-        public bool CheckIndex(int index)
-        {
-            return (m_animalList != null) & (index < m_animalList.Count) & (index >= 0);
-        }
-
-        /// <summary>
-        /// Re-initialize the class and reset all variables.
-        /// </summary>
-        /// <remarks></remarks>
-        public void Reset()
-        {
-            //creating the list box again, will erase the array
-            m_animalList = new List<Animal>();
-        }
-
+        /// <param name="category">Category of the animal</param>
+        /// <param name="species">Selected animal species</param>
+        /// <returns></returns>
         public Animal CreateAnimal(CategoryType category, string species)
         {
             Animal animalObj = null; //type not known at this time
@@ -137,9 +124,33 @@ namespace Animal_Motel
             return strOut;
         }
 
+        /// <summary>
+        /// Check so index is with the allowed range of the colelction boundaries.
+        /// </summary>
+        /// <param name="index"></param>
+        /// <returns>True if index is valid, false otherwise</returns>
+        /// <remarks>This function may be useful for client objects and therefore is
+        /// declared public.</remarks>
+        public bool CheckIndex(int index)
+        {
+            return (m_animalList != null) & (index < m_animalList.Count) & (index >= 0);
+        }
+
+        /// <summary>
+        /// To get the details of the animal object at given index
+        /// </summary>
+        /// <param name="index"></param>
+        /// <returns></returns>
         public Animal GetAnimal(int index)
         {
-            return m_animalList.ElementAt(index);
+            if(CheckIndex(index))
+            {
+                return m_animalList.ElementAt(index);
+            }
+            else
+            {
+                return null;
+            }
         }
     }
 }

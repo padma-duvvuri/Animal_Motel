@@ -1,4 +1,8 @@
-﻿using System;
+﻿//File: Dolphine.cs
+//Name: Padma Priya Duvvuri
+//Date: 20/06/2012
+
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -7,12 +11,12 @@ namespace Animal_Motel
 {
     /// <summary>
     /// This class inherits the Insects class
-    /// Also defines properties and methods specific to Bees
+    /// Also defines properties and methods specific to Dolphines
     /// </summary>
     public class Dolphine : Marines
     {
         //fields specific to Dolphines
-        private bool m_CanBeTrained;
+        private bool m_CanBeTrained; // can that be trained or not
 
         /// <summary>
         /// Default Constructor
@@ -36,7 +40,7 @@ namespace Animal_Motel
         /// <summary>
         /// Implementation of Abstract class from Animal.cs
         /// </summary>
-        /// <returns>A string with information regarding Insect bee</returns>
+        /// <returns>A string with information regarding Marine Dolphine</returns>
         public override string GetAnimalSpecificData()
         {
             string strInfo = ExtraAnimalInfo;  //Call to porperty in base class (Animal.cs)
@@ -48,9 +52,9 @@ namespace Animal_Motel
         }
 
         /// <summary>
-        /// Implementation of Abstract class from Insects.cs
+        /// Implementation of Abstract class from Marines.cs
         /// </summary>
-        /// <returns>Retuns infomation about stinking nature of the Bee</returns>
+        /// <returns>Retuns infomation about Dolphine</returns>
         public override string DangerousAndWildData()
         {
             string strOut = "This animal very lively animal";

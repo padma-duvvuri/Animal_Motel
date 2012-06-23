@@ -16,6 +16,6 @@ namespace Animal_Motel
     {
         Bee,
         ButterFly
-        // More to add
+        // Only 2 added
     }
 }

@@ -1,4 +1,8 @@
-﻿using System;
+﻿//File: Animal.cs
+//Name: Padma Priya Duvvuri
+//Date: 18/06/2012
+
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -11,23 +15,30 @@ namespace Animal_Motel
     /// </summary>
     public abstract class Animal : IAnimal
     {
-        private int m_ID;
-        private string m_name;
-        private GenderType m_gender;
-        private CategoryType m_category;
-        private double m_age;
-        private string m_extraAnimalInfo;
-        private string m_animalType;
+        private int m_ID; //ID for animal
+        private string m_name; //pet name
+        private GenderType m_gender; // gender
+        private CategoryType m_category; // category that animal belongs to
+        private double m_age; //age of the animal
+        private string m_extraAnimalInfo; //additional information about the animal
+        private string m_animalType; // animal specific information
 
-        //default construktor
+        //default construdtor
         public Animal()
         { }
+
+        /// <summary>
+        /// property for m_animalType field
+        /// </summary>
         public string AnimalType
         {
             get { return m_animalType; }
             set { m_animalType = value; }
         }
 
+        /// <summary>
+        /// property for m_name field
+        /// </summary>
         public string Name
         {
             get { return m_name; }

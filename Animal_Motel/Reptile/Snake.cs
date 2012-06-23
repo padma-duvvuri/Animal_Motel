@@ -1,4 +1,8 @@
-﻿using System;
+﻿//File: Snake.cs
+//Name: Padma Priya Duvvuri
+//Date: 21/06/2012
+
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -6,13 +10,13 @@ using System.Text;
 namespace Animal_Motel
 {
     /// <summary>
-    /// This class inherits the Insects class
-    /// Also defines properties and methods specific to Bees
+    /// This class inherits the Reptiles class
+    /// Also defines properties and methods specific to Snake
     /// </summary>
     public class Snake : Reptiles
     {
-        //fields specific to Bees
-        private bool m_isCobra;
+        //fields specific to Reptiles
+        private bool m_isCobra; 
 
         /// <summary>
         /// Default Constructor
@@ -23,7 +27,7 @@ namespace Animal_Motel
 
 
         /// <summary>
-        /// Gets or sets the whether the Bees is Honeybee or
+        /// Gets or sets the whether the snake is a cobra or
         /// not
         /// </summary>
         public bool IsCobra
@@ -37,7 +41,7 @@ namespace Animal_Motel
         /// <summary>
         /// Implementation of Abstract class from Animal.cs
         /// </summary>
-        /// <returns>A string with information regarding Insect bee</returns>
+        /// <returns>A string with information regarding Reptile Snake</returns>
         public override string GetAnimalSpecificData()
         {
             string strInfo = ExtraAnimalInfo;  //Call to porperty in base class (Animal.cs)
@@ -49,9 +53,9 @@ namespace Animal_Motel
         }
 
         /// <summary>
-        /// Implementation of Abstract class from Insects.cs
+        /// Implementation of Abstract class from Reptiles.cs
         /// </summary>
-        /// <returns>Retuns infomation about stinking nature of the Bee</returns>
+        /// <returns>Retuns infomation about Snake</returns>
         public override string BiteAndDangerousData()
         {
             string strOut = "Can bite ";

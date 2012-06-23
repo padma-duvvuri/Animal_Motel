@@ -1,4 +1,8 @@
-﻿using System;
+﻿//File: Shark.cs
+//Name: Padma Priya Duvvuri
+//Date: 20/06/2012
+
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -23,7 +27,7 @@ namespace Animal_Motel
 
 
         /// <summary>
-        /// Gets or sets the whether this animal can be trained for entertainment purpose or not
+        /// Gets or sets the whether this animal is dangerous or not
         /// </summary>
         public bool IsDangerous
         {
@@ -36,7 +40,7 @@ namespace Animal_Motel
         /// <summary>
         /// Implementation of Abstract class from Animal.cs
         /// </summary>
-        /// <returns>A string with information regarding Insect bee</returns>
+        /// <returns>A string with information regarding Marine Shark</returns>
         public override string GetAnimalSpecificData()
         {
             string strInfo = ExtraAnimalInfo;  //Call to porperty in base class (Animal.cs)
@@ -48,9 +52,9 @@ namespace Animal_Motel
         }
 
         /// <summary>
-        /// Implementation of Abstract class from Insects.cs
+        /// Implementation of Abstract class from Marines.cs
         /// </summary>
-        /// <returns>Retuns infomation about stinking nature of the Bee</returns>
+        /// <returns>Retuns infomation about Shark</returns>
         public override string DangerousAndWildData()
         {
             string strOut = "Lot of Movies are made about this animal";

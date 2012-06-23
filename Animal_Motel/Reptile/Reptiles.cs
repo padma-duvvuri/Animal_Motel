@@ -1,4 +1,8 @@
-﻿using System;
+﻿//File: Reptiles.cs
+//Name: Padma Priya Duvvuri
+//Date: 21/06/2012
+
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -12,7 +16,7 @@ namespace Animal_Motel
     /// </summary>
     public abstract class Reptiles : Animal
     {
-        //insect poisonous or not
+        //fileds specific to Reptiles
         private bool m_ispoisonous;
 
         /// <summary>
@@ -32,8 +36,7 @@ namespace Animal_Motel
         }
 
         /// <summary>
-        /// For all insects objects, info on their invasiveness and stinkynss
-        /// should be provided
+        /// For all Reptiles, info about whether they bite or they are dangerous
         /// </summary>
         /// <returns></returns>
         public abstract string BiteAndDangerousData();
